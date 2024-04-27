@@ -22,27 +22,27 @@ Emotion has 8 particulars namely,
 
 click to view the [dataset.csv](url)
 # Installed Libraries
+
 '''import pandas as pd
 import numpy as np
 import neattext.functions as nfx
 import seaborn as sns
 import matplotlib.pyplot as plt
-from wordcloud import WordCloud
-'''
+from wordcloud import WordCloud'''
 # About the Libraries
 # TextBlob
 TextBlob is a Python library that provides a simple and intuitive API for natural language processing tasks, including sentiment analysis. It offers built-in sentiment analysis capabilities based on pre-trained models.TextBlob's sentiment analysis feature provides a polarity score and subjectivity score for a given text. The polarity score indicates the sentiment as positive (score > 0), negative (score < 0), or neutral (score = 0), while the subjectivity score represents the degree of subjective or objective nature of the text. Code for TextBlob in the analysis
 '''
-def get_sentiment(text):
-  blob=TextBlob(text)
-  sentiment= blob.sentiment.polarity
-  if sentiment >0:
-    result='Positive'
-  elif sentiment <0:
-    result= 'Negative'
-  else:
-    result= 'Neutral'
-  return result
+    def get_sentiment(text):
+       blob=TextBlob(text)
+       sentiment= blob.sentiment.polarity
+      if sentiment >0:
+          result='Positive'
+      elif sentiment <0:
+          result= 'Negative'
+      else:
+          result= 'Neutral'
+    return result
   '''
 # NeatText
 NeatText is a Python library that offers text preprocessing functions for cleaning and normalizing text data. It provides various text cleaning operations to remove noise, normalize text, and handle common text-related issues.NeatText offers functions to remove special characters, URLs, email addresses, numbers, and other unwanted elements from text. It helps to eliminate noise and focus on the meaningful content for sentiment analysis.
