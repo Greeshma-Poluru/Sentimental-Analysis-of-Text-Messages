@@ -20,10 +20,9 @@ Emotion has 8 particulars namely,
 7. Neutral
 8. Fear Text has the messages on which the Analysis is to be performed.
 
-click to view the [https://github.com/Greeshma-Poluru/Sentimental-Analysis-of-Text-Messages/blob/main/dataset.csv](url)
+click to view the [dataset.csv](url)
 # Installed Libraries
-'''
-import pandas as pd
+'''import pandas as pd
 import numpy as np
 import neattext.functions as nfx
 import seaborn as sns
